@@ -1,0 +1,526 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.HomeAllWrapper{
+    background-image: url('../images/home-back.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.container{
+    width: 62.5vw;
+    margin: 0 auto;
+}
+.HomeAllWrapper header, .kariqAllWrapper header{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2.61vw;
+}
+.HomeAllWrapper header img, .kariqAllWrapper header img{
+    width: 4.5vw;
+}
+.HomeAllWrapper header ul, .kariqAllWrapper header ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.HomeAllWrapper header ul li:not(:last-child), 
+.kariqAllWrapper header ul li:not(:last-child){
+    margin-right: 1.72vw;
+}
+.HomeAllWrapper header ul li a,
+.kariqAllWrapper header ul li a{
+    font-family: arial;
+    color: white;
+    text-decoration: none;
+    font-size: 0.73vw;
+}
+.HomeAllWrapper .content{
+    margin-top: 11vw;
+}
+.HomeAllWrapper .content h1{
+    color: white;
+    font-family: arial;
+    text-transform: uppercase;
+    font-size: 2.5vw;
+    line-height: 3.7vw;
+}
+.HomeAllWrapper .content p{
+    color: white;
+    font-family: arial;
+    margin-top: 1.82vw;
+    font-size: 1.25vw;
+}
+.HomeAllWrapper .content button{
+    padding: 1.05vw;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 0.834vw;
+    color: white;
+    transition: 0.4s;
+}
+.HomeAllWrapper .content button svg{
+    width: 0.4vw;
+    fill: white;
+    margin-left: 0.521vw;
+}
+.HomeAllWrapper .content a .kariq{
+    background: #ff3a21;
+    margin-right: 1.57vw;
+}
+.HomeAllWrapper .content a .ajakc{
+    background: #26bde2;
+}
+.HomeAllWrapper .content a .kariq:hover{
+    background: #da1900;
+}
+.HomeAllWrapper .content a .ajakc:hover{
+    background: #009dc4;
+}
+.HomeAllWrapper .content .btns{
+    margin-top: 3.39vw;
+
+}
+.HomeAllWrapper .content .btns a{
+    text-decoration: none;
+}
+.HomeAllWrapper footer{
+    font-family: arial;
+    color: white;
+    /* margin-top: 17.97vw; */
+    padding-bottom: 1.57vw;
+    position: absolute;
+    bottom: 0;
+}
+.HomeAllWrapper footer p{
+    font-family: arial;
+    color: white;
+    font-size: 0.73vw;
+}
+/* //////////////////////// */
+.kariqAllWrapper header{
+    background: #26bde2;
+}
+.kariqAllWrapper header .container{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2.35vw;
+}
+.kariqAllWrapper .form{
+    padding-bottom: 5.2vw;
+}
+.kariqAllWrapper .form h1{
+    font-family: arial;
+    text-align: center;
+    margin-top: 7.5vw;
+    margin-bottom: 5.2vw;
+    font-size: 1.7vw;
+}
+/* ============================  TABS */
+.tabs{
+    font-family: arial;
+}
+.tabs-header{
+    display: flex;
+}
+.tab-h{
+    width: 50vw;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.4s;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    font-size: 0.94vw;
+}
+.tab-h:not(:last-child){
+    margin-right: 2.35vw;
+}
+.tab-h .line{
+    width: 100%;
+    height: 0.159vw;
+    background: black;
+    margin: 0 auto;
+    margin-top: 1.31vw;
+}
+.tab-b{
+    display: none;
+}  
+.tab-h.active .line{
+    background: #ff3a21;
+    transition: 0.5s;
+}
+.tab-h.active{
+    color: #ff3a21;
+}
+.kariqAllWrapper .form .tabs .tabs-header .tab-h.active .card svg{
+    fill: #ff3a21;
+    transition: 0.5s;
+}
+.ajakcAllWrapper .form .tabs .tabs-header .tab-h.active .card svg{
+    fill: #26bde2;
+}
+.ajakcAllWrapper .tab-h.active{
+    color: #26bde2;
+}
+.ajakcAllWrapper .tab-h.active .line{
+    background: #26bde2;
+}
+/* ============================ */
+.kariqAllWrapper .form .tabs .tabs-header .tab-h .card{
+    display: inline-block;
+    align-items: center;
+    position: absolute;
+    left: 5vw;
+    top: -0.5vw;
+}
+.kariqAllWrapper .form .tabs .tabs-header .tab-h .card svg{
+    fill: black;
+    width: 2.5vw;
+    height: 2.5vw;
+    z-index: 1;
+}
+.kariqAllWrapper .form .tabs .tabs-header .tab-h .card svg.znaki{
+    width: 1vw;
+    height: 1vw;
+    position: relative;
+    left: -0.6vw;
+    z-index: 2;
+}
+.kariqAllWrapper .form .tabs .tabs-body .tab-b form{
+    background: #e8e8e8;
+    margin-top: 2.6vw; 
+    padding: 2.61vw 6.1vw 2.61vw 4.9vw;
+}
+.kariqAllWrapper .form .tabs .tabs-body .tab-b form h2,
+.kariqAllWrapper .form #regForm .tab h2{
+    font-weight: bold;
+    font-size: 0.94vw;
+    margin-bottom: 1.83vw;
+    margin-top: 2.61vw;
+    font-family: arial;
+}
+.kariqAllWrapper .form .tabs .tabs-body .tab-b form {
+    font-weight: bold;
+    font-size: 0.94vw;
+}
+.kariqAllWrapper .form .tabs .tabs-body .tab-b form .form_data{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 1.83vw;
+    grid-row-gap: 1.83vw;
+}
+.kariqAllWrapper .form .tabs .tabs-body .tab-b form input, 
+.kariqAllWrapper .form .tabs .tabs-body .tab-b form select,
+.kariqAllWrapper .form form input,
+.kariqAllWrapper .form form select{
+    width: 100%;
+    height: 2.35vw;
+    outline: none;
+    border: 1px solid #d6d6d6;
+    border-radius: 0;
+    padding-left: 0.521vw;
+    padding-right: 0.521vw;
+    font-family: arial;
+    font-size: 0.834vw;
+}
+.kariqAllWrapper .form .tabs .tabs-body .tab-b form select{
+    cursor: pointer;
+    padding: 0 0.521vw;
+    height: 2.35vw;
+}
+.kariqAllWrapper .form .tabs .tabs-body .tab-b form select option{
+    cursor: pointer;
+    padding: 0.521vw 0.521vw;
+    border: none;
+}
+.kariqAllWrapper .form .tabs .tabs-body .tab-b form select option:hover{
+    background: #f1f1f1;
+    transition: 0.5s;
+    background: #f1f1f1;
+}
+.kariqAllWrapper .form .tabs .tabs-body .tab-b form p,
+.kariqAllWrapper .form #regForm p{
+    font-family: arial;
+    font-weight: normal;
+    font-size: 0.834vw;
+    margin-bottom: 0.521vw;
+    color: #464646;
+}
+.kariqAllWrapper .form .tabs .tabs-body .tab-b form .form_data .block.mt,
+.kariqAllWrapper .form #regForm .tab .form_data .block.mt{
+    margin-top: 0.94vw;
+}
+.kariqAllWrapper .form .tabs .tabs-body .tab-b form .vayr{
+    margin-top: 2.35vw;
+}
+.kariqAllWrapper .form .tabs .tabs-body .tab-b form .add_person,
+.kariqAllWrapper .form #regForm .add_person{
+    display: inline-block;
+    margin: 1.05vw 0;
+    cursor: pointer;
+    position: relative;
+}
+.kariqAllWrapper .form .tabs .tabs-body .tab-b form .add_person .plus,
+.kariqAllWrapper .form #regForm .add_person .plus{
+    color: #818181;
+    font-size: 1.4vw;
+    position: absolute;
+    font-weight: bold;
+}
+.kariqAllWrapper .form .tabs .tabs-body .tab-b form .add_person p,
+.kariqAllWrapper .form #regForm .add_person p{
+    position: absolute;
+    left: 1.2vw;
+    white-space: nowrap;
+    top: 0.3vw;
+}
+
+.kariqAllWrapper .form .tabs .tabs-body .tab-b form div .subBtn{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 2.35vw;
+    outline: none;
+    font-size: 0.834vw;
+    background: #26bde2;
+    color: white;
+    padding: 1.05vw 5.2vw;
+    border: none;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.kariqAllWrapper .form .tabs .tabs-body .tab-b form div .subBtn:hover{
+    background: #009dc4;
+}
+.sameFooter footer{
+    padding: 1.3vw 0;
+    background: #454545;
+}
+.sameFooter footer p{
+    font-family: arial;
+    color: white;
+    font-size: 0.73vw;
+    align-items: center;
+}
+.kariqAllWrapper .form .tabs .some_text{
+    margin-top: 5.2vw;
+    font-family: arial;
+    font-size: 0.94vw;
+    font-weight: bold;
+}
+/* ==================================== */
+#regForm {
+    background: #e8e8e8;
+    padding: 2.61vw 6.1vw 2.61vw 4.9vw;
+}
+#regForm .tab .form_data{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 1.83vw;
+    grid-row-gap: 1.83vw;
+}
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+    border: 1px solid #ff3a21 !important;
+}
+/* Hide all steps by default: */
+.tab {
+    display: none;
+}
+/* Make circles that indicate the steps of the form: */
+.step {
+    display: none;
+}
+.kariqAllWrapper .form form .pastatuxt_p{
+    margin: 1.57vw 0;
+}
+.kariqAllWrapper .form #regForm .radio_btns{
+    margin-top: 1vw;
+}
+.kariqAllWrapper .form #regForm .radio_btns input{
+    border: 1px solid #d6d6d6;
+    border-radius: 1vw;
+    display: inline-block;
+    width: 1vw;
+    align-items: center;
+    height: 1.2vw;
+    background: white;
+    cursor: pointer;
+    position: relative;
+}
+.kariqAllWrapper .form #regForm .radio_btns label{
+    display: inline-block;
+    align-items: center;
+
+}
+.kariqAllWrapper .form #regForm .radio_btns label:not(:last-child){
+    margin-right: 1vw;
+}
+.kariqAllWrapper .form #regForm .date input{
+    width: 16vw;
+}
+.kariqAllWrapper .form #regForm .date #check{
+    width: 0.9vw;
+    height: 0.9vw;
+    border-radius: 0;
+    border: 1px solid #d6d6d6;
+}
+.kariqAllWrapper .form #regForm .date .tariq_block{
+    width: 5vw;
+}
+.kariqAllWrapper .form #regForm .checkboxes p{
+    margin-bottom: 1vw;
+}
+.kariqAllWrapper .form #regForm .checkboxes p input{
+    width: 1vw;
+    height: 1vw;
+    cursor: pointer;
+    margin-right: 0.4vw;
+    border: 1px solid #d6d6d6;
+    border-radius: 0;
+}
+.kariqAllWrapper .form #regForm .step_form_btns button{
+    padding: 1.05vw 1.57vw;
+    text-transform: uppercase;
+    font-family: arial;
+    font-weight: bold;
+    font-size: 0.834vw;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.kariqAllWrapper .form #regForm .step_form_btns #prevBtn{
+    background: #b7b7b7;
+    color: #464646;
+}
+.kariqAllWrapper .form #regForm .step_form_btns #prevBtn:hover{
+    background: #9c9c9c;
+}
+.kariqAllWrapper .form #regForm .step_form_btns #nextBtn{
+    background: #464646;
+    color: white;
+}
+.kariqAllWrapper .form #regForm .step_form_btns #nextBtn:hover{
+    background: #1f1f1f;
+
+}
+.kariqAllWrapper .form #regForm .step_form_btns #nextBtn.submit_btn{
+    background: #da1900 !important;
+}
+.container_for_secTab{
+    width: 33.6vw;
+}
+.container_for_secTab .form_data{
+    grid-template-columns: 1fr !important;
+    grid-row-gap: 0px !important;
+}
+.container_for_secTab .form_data select{
+    cursor: pointer;
+}
+.container_for_secTab .form_data .block{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1.8vw !important;
+    margin-top: 2vw;
+}
+.container_for_secTab .form_data .block .mt{
+    margin-top: 0.9vw;
+}
+.kariqAllWrapper .form form .checkboxes .checkboxes.more{
+    margin-left: 2vw;
+}
+.blockBtns button{
+    display: none;
+}
+.blockBtns p{
+    font-family: arial !important;
+    font-size: 0.94vw !important;
+    font-weight: bold !important;
+}
+.tabTwo_hascen{
+    font-size: 0.73vw; 
+    margin-top: 2.5vw; 
+    margin-bottom: 0.5vw;
+}
+.persCount_block{
+    width: 15.94vw; 
+    margin-bottom: 1.2vw;
+}
+.tnx_h2{
+    font-family: arial;
+    text-align: center;
+    margin-top: 7.5vw;
+    margin-bottom: 5.2vw;
+    font-size: 1.7vw;
+}
+.tnx_footer{
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    right: 0;
+}
+section .container{
+    background: #e8e8e8; 
+    padding: 2.61vw 6.1vw 2.61vw 4.9vw;
+}
+.checkmb{
+    margin-bottom: 2vw;
+}
+.hidden_block{
+    margin-left: 2vw;
+    display: none;
+}
+.information{
+    background: #838383;
+    color: white;
+    font-family: arial;
+    position: relative;
+    display: inline-block;
+    width: 1vw;
+    height: 1vw;
+    text-align: center;
+    align-items: center;
+    border-radius: 1vw;
+    cursor: pointer;
+    top: -1.5vw;
+    right: -11vw;
+}
+.information_hide{
+    background: #838383; 
+    color: white;
+    position: absolute;
+    font-family: arial;
+    padding: 0.5vw 0.5vw;
+    width: 12.3vw;
+    text-align: left;
+    top: -4vw;
+    left: -0.5vw;
+    display: none;
+}
+.erankyun{
+    width: 0.8vw;
+    height: 0.8vw;
+    background: #1eff00;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transform-origin: 0 100%;
+    -moz-transform-origin: 0 100%;
+    -ms-transform-origin: 0 100%;
+    -o-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+    position: absolute;
+    bottom: -0.5vw;
+    left: 1vw;
+    background: #838383;
+}
+.information:hover .information_hide{
+    display: block;
+}

@@ -1,0 +1,817 @@
+@media(max-width:1024px){
+    .container{
+        width: 100%;
+        padding: 0 4vw;
+    }
+    .HomeAllWrapper header img, .kariqAllWrapper header img {
+        width: 13vw;
+    }
+    .HomeAllWrapper header ul li:not(:last-child), 
+    .kariqAllWrapper header ul li:not(:last-child) {
+        margin-right: 5vw;
+    }
+    .HomeAllWrapper header ul li a,
+    .kariqAllWrapper header ul li a{
+        font-size: 4vw;
+        font-weight: bold;
+    }
+    .HomeAllWrapper .content {
+        margin-top: 19vw;
+    }
+    .HomeAllWrapper .content h1 {
+        font-size: 6.8vw;
+        line-height: 11vw;
+    }
+    .HomeAllWrapper .content p {
+        margin-top: 11vw;
+        font-size: 4.3vw;
+        line-height: 7vw;
+    }
+    .HomeAllWrapper .content .btns {
+        margin-top: 14vw;
+        display: flex;
+        justify-content: space-between;
+    }
+    .HomeAllWrapper .content button {
+        padding: 5.4vw;
+        font-size: 4vw;
+    }
+    .HomeAllWrapper .content button svg {
+        width: 3vw;
+        fill: white;
+        margin-left: 0;
+    }
+    .HomeAllWrapper .content a .kariq {
+        margin-right: 0;
+    }
+    .HomeAllWrapper footer {
+        font-family: arial;
+        color: white;
+        margin-top: 50vw;
+        padding-bottom: 8vw;
+    }
+    .HomeAllWrapper footer p {
+        font-family: arial;
+        color: white;
+        font-size: 3.7vw;
+    }
+    /* //////////////////////// */
+    .kariqAllWrapper header .container {
+        width: 100%;
+    }
+    .kariqAllWrapper .form h1 {
+        margin-top: 16vw;
+        margin-bottom: 14vw;
+        font-size: 9vw;
+    }
+    #regForm {
+        padding: 2.61vw 6.1vw 2.61vw 4.9vw;
+    }
+    .kariqAllWrapper .form .tabs .tabs-body .tab-b form h2, 
+    .kariqAllWrapper .form #regForm .tab h2 {
+        font-size: 4.8vw;
+        margin-bottom: 10vw;
+        margin-top: 5vw;
+    }
+    #regForm .tab .form_data {
+        display: block;
+    }
+    .kariqAllWrapper .form .tabs .tabs-body .tab-b form p, 
+    .kariqAllWrapper .form #regForm p {
+        font-size: 4.27vw;
+        margin-bottom: 2vw;
+        margin-top: 7vw;
+    }
+    .kariqAllWrapper .form .tabs .tabs-body .tab-b form input, 
+    .kariqAllWrapper .form .tabs .tabs-body .tab-b form select, 
+    .kariqAllWrapper .form form input, 
+    .kariqAllWrapper .form form select {
+        width: 100%;
+        height: 12vw;
+        padding-left: 4vw;
+        padding-right: 4vw;
+        font-size: 4.27vw;
+    }
+    .kariqAllWrapper .form #regForm .radio_btns {
+        margin-top: 3vw;
+        margin-bottom: 9vw;
+    }
+    .kariqAllWrapper .form #regForm .radio_btns input {
+        width: 5vw;
+        height: 5vw;
+    }
+    .kariqAllWrapper .form #regForm .radio_btns label:not(:last-child) {
+        margin-right: 5vw;
+    }
+    .radio_btns_p{
+        margin-top: 9vw !important;
+        margin-bottom: 0vw;
+    }
+    .kariqAllWrapper .form #regForm .date input {
+        width: 100%;
+        margin-top: 2vw;
+    }
+    .kariqAllWrapper .form #regForm .date #check {
+        width: 5vw;
+        height: 5vw;
+        border-radius: 0;
+        border: 1px solid #d6d6d6;
+    }
+    .tariq_p{
+        margin-top: 6vw !important;
+    }
+    .kariqAllWrapper .form #regForm .date .tariq_block {
+        width: 50%;
+    }
+    .kariqAllWrapper .form .tabs .tabs-body .tab-b form .add_person .plus, 
+    .kariqAllWrapper .form #regForm .add_person .plus {
+        font-size: 6vw;
+    }
+    .kariqAllWrapper .form .tabs .tabs-body .tab-b form .add_person p, .kariqAllWrapper .form #regForm .add_person p {
+        position: absolute;
+        left: 5vw;
+        top: 1vw;
+        white-space: nowrap;
+        margin-top: 0;
+    }
+    .kariqAllWrapper .form .tabs .tabs-body .tab-b form .add_person, 
+    .kariqAllWrapper .form #regForm .add_person {
+        margin-top: 5vw;
+        margin-bottom: 7vw;
+    }
+    .kariqAllWrapper .form #regForm .checkboxes p input {
+        width: 5vw;
+        height: 5vw;
+        cursor: pointer;
+        margin-right: 0.4vw;
+        border: 1px solid #d6d6d6;
+        border-radius: 0;
+    }
+    .first_tab_chbx{
+        margin-top: 10vw !important;
+    }
+    .kariqAllWrapper .form #regForm .step_form_btns button {
+        padding: 5.4vw 8.2vw;
+        font-size: 4.27vw;
+        margin-top: 7vw;
+    }
+    .sameFooter footer {
+        padding: 4vw 0;
+    }
+    .sameFooter footer p {
+        font-size: 3.7vw;
+    }
+    .kariqAllWrapper .form {
+        padding-bottom: 15vw;
+    }
+    .container_for_secTab {
+        width: 100%;
+    }
+    .container_for_secTab .form_data .block {
+        display: block;
+        margin-top: 2vw;
+        margin-bottom: 10vw;
+    }
+    .tabTwo_selects{
+        margin-top: 10vw !important;
+    }
+    .tabTwo_hascen_{
+        font-size: 4.27vw;
+        margin-bottom: 2vw;
+        margin-top: 7vw;
+    }
+    .kariqAllWrapper .form #regForm .checkboxes p {
+        margin-bottom: 5vw;
+    }
+    .persCount_block{
+        width: 40% !important; 
+        margin-bottom: 1.2vw;
+    }
+    .tnx_h2{
+        margin-top: 13vw !important;
+        margin-bottom: 10vw !important;
+        font-size: 8.6vw !important;
+    }
+    section{
+        padding: 0 4.27vw;
+    }
+    .blockBtns p {
+        font-size: 4.8vw !important;
+    }
+    .tnx_footer{
+        position: inherit;
+        margin-top: 13vw;
+    }
+    section .container{
+        padding: 7.61vw 6.1vw 7.61vw 4.9vw;
+    }
+    .tab-h .line {
+        width: 100%;
+        height: 1vw;
+        background: black;
+        margin: 0 auto;
+        margin-top: 1.31vw;
+    }
+    .tab-h {
+        width: 50vw;
+        font-size: 3.2vw;
+    }
+    .kariqAllWrapper .form .tabs .tabs-header .tab-h .card {
+        position: absolute;
+        left: 19vw;
+        top: -7vw;
+    }
+    .kariqAllWrapper .form .tabs .tabs-header .tab-h .card svg {
+        width: 5vw;
+        height: 5vw;
+    }
+    .kariqAllWrapper .form .tabs .some_text {
+        margin-top: 10vw;
+        font-size: 4.8vw;
+        margin-bottom: 10vw;
+    }
+    .kariqAllWrapper .form .tabs .tabs-body .tab-b form .form_data {
+        display: block;
+    }
+    .kariqAllWrapper .form .tabs .tabs-body .tab-b form .vayr {
+        margin-top: 10vw;
+    }
+    .kariqAllWrapper .form .tabs .tabs-body .tab-b form div .subBtn {
+        font-size: 4.27vw;
+        padding: 5.35vw 26.7vw;
+        margin-top: 10vw;
+    }
+    .kariqAllWrapper .form .tabs .tabs-body .tab-b form div .subBtn {
+        margin-top: 4vw;
+    }
+    
+}
+
+/* ========================================================= */
+/* ========================================================= */
+/* ========================================================= */
+/* ========================================================= */
+/* ========================================================= */
+
+
+@media(max-width: 1024px) and (min-width: 768px){
+    .HomeAllWrapper header img, .kariqAllWrapper header img {
+        width: 13vw;
+    }
+    .container {
+        width: 100%;
+        padding: 0 10vw;
+    }
+    .HomeAllWrapper .content h1 {
+        font-size: 4.8vw;
+        line-height: 8vw;
+    }
+    .HomeAllWrapper .content {
+        margin-top: 10vh;
+    }
+    .HomeAllWrapper .content p {
+        margin-top: 4vh;
+        font-size: 2.3vw;
+        line-height: 3.5vw;
+    }
+    .HomeAllWrapper .content button {
+        padding: 2vw;
+        font-size: 1.5vw;
+    }
+    .HomeAllWrapper .content button svg {
+        width: 1vw;
+        fill: white;
+        margin-left: 0;
+    }
+    .HomeAllWrapper footer p {
+        font-family: arial;
+        color: white;
+        font-size: 1.7vw;
+    }
+    .HomeAllWrapper .content .btns {
+        margin-top: 6vh;
+        display: flex;
+        justify-content: space-around;
+    }
+    .HomeAllWrapper footer {
+        font-family: arial;
+        color: white;
+        margin-top: 0vw;
+        padding-bottom: 3vh;
+    }
+    .kariqAllWrapper .form h1 {
+        margin-top: 16vw;
+        margin-bottom: 14vw;
+        font-size: 4.8vw;
+    }
+    .tab-h {
+        width: 50vw;
+        font-size: 2vw;
+    }
+    .kariqAllWrapper .form .tabs .tabs-header .tab-h .card svg {
+        width: 4vw;
+        height: 4vw;
+    }
+    .kariqAllWrapper .form .tabs .some_text {
+        margin-top: 10vw;
+        font-size: 2.8vw;
+        margin-bottom: 10vw;
+    }
+    .kariqAllWrapper .form .tabs .tabs-body .tab-b form h2, 
+    .kariqAllWrapper .form #regForm .tab h2 {
+        font-size: 2.8vw;
+        margin-bottom: 10vw;
+        margin-top: 5vw;
+    }
+    .kariqAllWrapper .form .tabs .tabs-body .tab-b form p, .kariqAllWrapper .form #regForm p {
+        font-size: 2.27vw;
+        margin-bottom: 2vw;
+        margin-top: 5vw;
+    }
+    .kariqAllWrapper .form .tabs .tabs-body .tab-b form input, .kariqAllWrapper .form .tabs .tabs-body .tab-b form select, .kariqAllWrapper .form form input, .kariqAllWrapper .form form select {
+        width: 100%;
+        height: 12vw;
+        padding-left: 4vw;
+        padding-right: 4vw;
+        font-size: 2.27vw;
+    }
+    .kariqAllWrapper .form .tabs .tabs-body .tab-b form input, .kariqAllWrapper .form .tabs .tabs-body .tab-b form select, .kariqAllWrapper .form form input, .kariqAllWrapper .form form select {
+        width: 100%;
+        height: 8vw;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        font-size: 2.27vw;
+    }
+    .sameFooter footer p {
+        font-size: 1.7vw;
+    }
+    .kariqAllWrapper .form .tabs .tabs-body .tab-b form div .subBtn {
+        font-size: 2.27vw;
+        padding: 3.35vw 10.7vw;
+        margin-top: 10vw;
+    }
+
+    .HomeAllWrapper .content h1 {
+        font-size: 3.5vw !important;
+        line-height: 5.5vw !important;
+    }
+    .HomeAllWrapper .content p {
+        margin-top: 4vh !important;
+        font-size: 2vw !important;
+        line-height: 3.5vw !important;
+    }
+    .HomeAllWrapper header img, .kariqAllWrapper header img {
+        width: 7vw;
+    }
+    .kariqAllWrapper .form h1 {
+        margin-top: 16vw;
+        margin-bottom: 14vw;
+        font-size: 2.8vw;
+    }
+    .tab-h {
+        width: 50vw;
+        font-size: 1.5vw;
+    }
+    .tab-h .line {
+        width: 100%;
+        height: 0.5vw;
+        margin-top: 1.31vw;
+    }
+    .kariqAllWrapper .form .tabs .some_text {
+        margin-top: 10vw;
+        font-size: 1.8vw;
+        margin-bottom: 10vw;
+    }
+    .kariqAllWrapper .form .tabs .tabs-body .tab-b form h2, .kariqAllWrapper .form #regForm .tab h2 {
+        font-size: 1.8vw;
+        margin-bottom: 4vw;
+        margin-top: 4vw;
+    }
+    .kariqAllWrapper .form .tabs .tabs-body .tab-b form input, .kariqAllWrapper .form .tabs .tabs-body .tab-b form select, .kariqAllWrapper .form form input, .kariqAllWrapper .form form select {
+        width: 100%;
+        height: 4vw;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        font-size: 1.27vw;
+    }
+    .kariqAllWrapper .form .tabs .tabs-body .tab-b form p, .kariqAllWrapper .form #regForm p {
+        font-size: 1.27vw;
+        margin-bottom: 0.7vw;
+        margin-top: 2.2vw;
+    }
+    .kariqAllWrapper .form .tabs .tabs-body .tab-b form .add_person .plus, .kariqAllWrapper .form #regForm .add_person .plus {
+        font-size: 3vw;
+    }
+    .kariqAllWrapper .form .tabs .tabs-body .tab-b form .add_person p, .kariqAllWrapper .form #regForm .add_person p {
+        position: absolute;
+        left: 2.5vw;
+        top: 1vw;
+        white-space: nowrap;
+        margin-top: 0;
+    }
+    .kariqAllWrapper .form .tabs .tabs-body .tab-b form .vayr {
+        margin-top: 5vw;
+    }
+    .kariqAllWrapper .form .tabs .tabs-body .tab-b form div .subBtn {
+        font-size: 1.27vw;
+        padding: 2vw 4.7vw;
+        margin-top: 0vw;
+    }
+    .kariqAllWrapper .form {
+        padding-bottom: 7vw;
+    }
+    .sameFooter footer p {
+        font-size: 1.2vw;
+    }
+    .sameFooter footer {
+        padding: 2vw 0;
+    }
+    .kariqAllWrapper .form #regForm .radio_btns input {
+        width: 2.5vw;
+        height: 2.5vw;
+    }
+    .kariqAllWrapper .form #regForm .date #check {
+        width: 2vw;
+        height: 2vw;
+        border-radius: 0;
+        border: 1px solid #d6d6d6;
+    }
+    .kariqAllWrapper .form #regForm .step_form_btns #nextBtn {
+        background: #464646;
+        color: white;
+    }
+    .information {
+        background: #838383;
+        color: white;
+        font-family: arial;
+        position: relative;
+        display: inline-block;
+        width: 1.8vw;
+        height: 1.8vw;
+        text-align: center;
+        align-items: center;
+        border-radius: 1vw;
+        cursor: pointer;
+        top: -2.3vw;
+        right: -17vw;
+    }
+
+    .information_hide{
+        background: #838383; 
+        color: white;
+        position: absolute;
+        font-family: arial;
+        padding: 1vw 1vw;
+        width: 24vw;
+        text-align: left;
+        top: -7vw;
+        left: -0.2vw;
+        display: none;
+    }
+    .kariqAllWrapper .form #regForm .step_form_btns button {
+        padding: 2vw 6vw;
+        font-size: 1.5vw;
+        margin-top: 4vw;
+    }
+    .kariqAllWrapper .form #regForm .checkboxes p input {
+        width: 2vw;
+        height: 2vw;
+        cursor: pointer;
+        margin-right: 0.4vw;
+        border: 1px solid #d6d6d6;
+        border-radius: 0;
+    }
+    .kariqAllWrapper .form #regForm .checkboxes p {
+        margin-bottom: 1vw;
+    }
+    .first_tab_chbx {
+        margin-top: 5vw !important;
+    }
+    .container_for_secTab .form_data .block {
+        display: block;
+        margin-top: 2vw;
+        margin-bottom: 4vw;
+    }
+    #mobile_top{
+        margin-top: 5vw !important;
+    }
+    .tabTwo_selects {
+        margin-top: 5vw !important;
+    }
+    .kariqAllWrapper .form #regForm .radio_btns {
+        margin-top: 1.5vw;
+        margin-bottom: 4vw;
+    }
+    .radio_btns_p {
+        margin-top: 4vw !important;
+        margin-bottom: 0vw;
+    }
+    .tariq_p {
+        margin-top: 2vw !important;
+    }
+    .kariqAllWrapper .form #regForm .date input {
+        width: 100%;
+        margin-top: 0.5vw;
+    }
+    .kariqAllWrapper .form .tabs .tabs-body .tab-b form .add_person, .kariqAllWrapper .form #regForm .add_person {
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+    }
+    .tnx_h2 {
+        margin-top: 8vw !important;
+        margin-bottom: 6vw !important;
+        font-size: 2.6vw !important;
+    }
+    .blockBtns p {
+        font-size: 1.8vw !important;
+    }
+}
+@media (max-width: 768px) and (min-width: 426px){
+    .HomeAllWrapper header img, .kariqAllWrapper header img {
+        width: 13vw;
+    }
+    .container {
+        width: 100%;
+        padding: 0 10vw;
+    }
+    .HomeAllWrapper .content h1 {
+        font-size: 4.8vw;
+        line-height: 8vw;
+    }
+    .HomeAllWrapper .content {
+        margin-top: 10vh;
+    }
+    .HomeAllWrapper .content p {
+        margin-top: 4vh;
+        font-size: 3vw;
+        line-height: 4.5vw;
+    }
+    .HomeAllWrapper .content button {
+        padding: 3vw;
+        font-size: 2.5vw;
+    }
+    .HomeAllWrapper .content button svg {
+        width: 2vw;
+        fill: white;
+        margin-left: 0;
+    }
+    .HomeAllWrapper footer p {
+        font-family: arial;
+        color: white;
+        font-size: 1.7vw;
+    }
+    .HomeAllWrapper .content .btns {
+        margin-top: 6vh;
+        display: flex;
+        justify-content: space-around;
+    }
+    .HomeAllWrapper footer {
+        font-family: arial;
+        color: white;
+        margin-top: 0vw;
+        padding-bottom: 3vh;
+    }
+
+    .kariqAllWrapper .form h1 {
+        margin-top: 16vw;
+        margin-bottom: 14vw;
+        font-size: 3.8vw !important;
+    }
+    .HomeAllWrapper .content h1 {
+        font-size: 4.5vw !important;
+        line-height: 5.5vw !important;
+    }
+    .HomeAllWrapper .content p {
+        margin-top: 4vh !important;
+        font-size: 2vw !important;
+        line-height: 3.5vw !important;
+    }
+    .HomeAllWrapper header img, .kariqAllWrapper header img {
+        width: 7vw;
+    }
+    .kariqAllWrapper .form h1 {
+        margin-top: 16vw;
+        margin-bottom: 14vw;
+        font-size: 2.8vw;
+    }
+    .tab-h {
+        width: 50vw;
+        font-size: 2vw;
+    }
+    .tab-h .line {
+        width: 100%;
+        height: 0.5vw;
+        margin-top: 1.31vw;
+    }
+    .kariqAllWrapper .form .tabs .some_text {
+        margin-top: 10vw;
+        font-size: 2.2vw;
+        margin-bottom: 10vw;
+    }
+    .kariqAllWrapper .form .tabs .tabs-body .tab-b form h2, .kariqAllWrapper .form #regForm .tab h2 {
+        font-size: 2.4vw;
+        margin-bottom: 4vw;
+        margin-top: 4vw;
+    }
+    .kariqAllWrapper .form .tabs .tabs-body .tab-b form input, .kariqAllWrapper .form .tabs .tabs-body .tab-b form select, .kariqAllWrapper .form form input, .kariqAllWrapper .form form select {
+        width: 100%;
+        height: 6vw;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        font-size: 2vw;
+    }
+    .kariqAllWrapper .form .tabs .tabs-body .tab-b form p, .kariqAllWrapper .form #regForm p {
+        font-size: 2.1vw;
+        margin-bottom: 1vw;
+        margin-top: 2.5vw;
+    }
+    .kariqAllWrapper .form .tabs .tabs-body .tab-b form .add_person .plus, .kariqAllWrapper .form #regForm .add_person .plus {
+        font-size: 3vw;
+    }
+    .kariqAllWrapper .form .tabs .tabs-body .tab-b form .add_person p, .kariqAllWrapper .form #regForm .add_person p {
+        position: absolute;
+        left: 2.5vw;
+        top: 1vw;
+        white-space: nowrap;
+        margin-top: 0;
+    }
+    .kariqAllWrapper .form .tabs .tabs-body .tab-b form .vayr {
+        margin-top: 5vw;
+    }
+    .kariqAllWrapper .form .tabs .tabs-body .tab-b form div .subBtn {
+        font-size: 2vw;
+        padding: 3vw 6.7vw;
+        margin-top: 0vw;
+    }
+    .kariqAllWrapper .form {
+        padding-bottom: 7vw;
+    }
+    .sameFooter footer p {
+        font-size: 2vw;
+    }
+    .sameFooter footer {
+        padding: 3vw 0;
+    }
+    .kariqAllWrapper .form .tabs .tabs-body .tab-b form div .subBtn {
+        margin-top: 4vw;
+    }
+    .kariqAllWrapper .form #regForm .step_form_btns #nextBtn {
+        background: #464646;
+        color: white;
+    }
+    .information {
+        background: #838383;
+        color: white;
+        font-family: arial;
+        position: relative;
+        display: inline-block;
+        width: 2.5vw;
+        height: 2.5vw;
+        text-align: center;
+        align-items: center;
+        border-radius: 1vw;
+        cursor: pointer;
+        top: -3.4vw;
+        right: -28vw;
+    }
+
+    .information_hide{
+        background: #838383; 
+        color: white;
+        position: absolute;
+        font-family: arial;
+        padding: 2vw 2vw;
+        width: 42vw;
+        text-align: left;
+        top: -12vw;
+        left: 0.3vw;
+        display: none;
+    }
+    .kariqAllWrapper .form #regForm .step_form_btns button {
+        padding: 2vw 6vw;
+        font-size: 1.5vw;
+        margin-top: 4vw;
+    }
+    .kariqAllWrapper .form #regForm .checkboxes p input {
+        width: 2vw;
+        height: 2vw;
+        cursor: pointer;
+        margin-right: 0.4vw;
+        border: 1px solid #d6d6d6;
+        border-radius: 0;
+    }
+    .kariqAllWrapper .form #regForm .checkboxes p {
+        margin-bottom: 1vw;
+    }
+    .first_tab_chbx {
+        margin-top: 5vw !important;
+    }
+    .container_for_secTab .form_data .block {
+        display: block;
+        margin-top: 2vw;
+        margin-bottom: 4vw;
+    }
+    #mobile_top{
+        margin-top: 5vw !important;
+    }
+    .tabTwo_selects {
+        margin-top: 5vw !important;
+    }
+    .kariqAllWrapper .form #regForm .radio_btns {
+        margin-top: 1.5vw;
+        margin-bottom: 4vw;
+    }
+    .radio_btns_p {
+        margin-top: 4vw !important;
+        margin-bottom: 0vw;
+    }
+    .tariq_p {
+        margin-top: 2vw !important;
+    }
+    .kariqAllWrapper .form #regForm .date input {
+        width: 100%;
+        margin-top: 0.5vw;
+    }
+    .kariqAllWrapper .form .tabs .tabs-body .tab-b form .add_person, .kariqAllWrapper .form #regForm .add_person {
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+    }
+    .kariqAllWrapper .form #regForm .radio_btns input {
+        width: 3vw;
+        height: 3vw;
+    }
+    .kariqAllWrapper .form #regForm .date #check {
+        width: 3vw;
+        height: 3vw;
+        border-radius: 0;
+        border: 1px solid #d6d6d6;
+    }
+    .kariqAllWrapper .form {
+        padding-bottom: 29vw;
+    }
+    .tnx_h2 {
+        margin-top: 13vw !important;
+        margin-bottom: 10vw !important;
+        font-size: 4.6vw !important;
+    }
+    .blockBtns p {
+        font-size: 2.8vw !important;
+    }
+    .tnx_footer {
+        position: absolute;
+        
+    }
+    .tnx_h2 {
+        margin-top: 7vw !important;
+        margin-bottom: 7vw !important;
+        font-size: 4.6vw !important;
+    }
+}
+@media (max-width: 426px){
+    .HomeAllWrapper .content {
+        margin-top: 11vh;
+    }
+    .HomeAllWrapper .content p {
+        margin-top: 5.5vh;
+        font-size: 4.3vw;
+        line-height: 7vw;
+    }
+    .HomeAllWrapper .content .btns {
+        margin-top: 7vh;
+        display: flex;
+        justify-content: space-between;
+    }
+    .HomeAllWrapper footer {
+        font-family: arial;
+        color: white;
+        margin-top: 0vw;
+        padding-bottom: 1vh;
+    }
+    .tnx_footer {
+        position: inherit;
+        margin-top: 36vw;
+    }
+}
+@media (max-width: 768px) and (min-width: 426px){
+    .HomeAllWrapper header img, .kariqAllWrapper header img {
+        width: 7vw;
+    }
+    .HomeAllWrapper .content h1 {
+        font-size: 3.8vw;
+        line-height: 6vw;
+    }
+    .HomeAllWrapper .content p {
+        margin-top: 4vh;
+        font-size: 2vw;
+        line-height: 3.5vw;
+    }
+    .HomeAllWrapper .content button {
+        padding: 2vw;
+        font-size: 1.5vw;
+    }
+    .HomeAllWrapper .content button svg {
+        width: 1vw;
+        fill: white;
+        margin-left: 0;
+    }
+}

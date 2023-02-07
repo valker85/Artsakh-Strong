@@ -1,0 +1,1958 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/media.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="kariqAllWrapper sameFooter">
+        <header>
+            <div class="container">
+                <a href="../pages/index.html"><img src="../images/Logo.png"></a>
+            </div>
+        </header>
+
+        <div class="form">
+            <div class="container">
+                <h1><b>Օգնության կարիք ունե՞ս</b></h1>
+                
+
+                <form id="regForm" action="">
+
+                  <!-- One "tab" for each step in the form: -->
+                  <div class="tab">
+                    <h2>1. Անձնական տվյալներ</h2>
+                    <div class="form_data">
+                      <div class="block">
+                        <p>Ընտանիքի անդամներից մեկի անձը հաստատող փաստաթղթի տեսակը*</p>
+                        <select>
+                            <option>Something 1</option>
+                            <option>Something 2</option>
+                            <option>Something 3</option>
+                            <option>Something 4</option>
+                        </select>
+                      </div>
+                      <div class="block mt">
+                          <p>Փաստաթղթի համարը*</p>
+                          <input>
+                      </div>
+                      <div class="block">
+                          <p>ՀԾՀ (Սոցիալական քարտ)*</p>
+                          <div class="information">i
+                            <div class="information_hide">
+                              Հանրային ծառայությունների համարանիշ
+                              <div class="erankyun"></div>
+                            </div>
+  
+                          </div>
+                          <input>
+                      </div>
+                    </div>
+                    <p class="pastatuxt_p" style="color: black;">Փաստաթուղթ ունեցող անդամի՝</p>
+                    <div class="form_data" style="margin-top: 1.57vw;">
+                      <div class="block">
+                          <p>Անունը*</p>
+                          <input>
+                      </div>
+                      <div class="block">
+                          <p>Ազգանունը*</p>
+                          <input>
+                      </div>
+                      <div class="block">
+                          <p>Հայրանունը*</p>
+                          <input>
+                      </div>
+                    </div>
+
+                    <p class="radio_btns_p" style="margin-top: 1.7vw; margin-bottom: -0.5vw;">Սեռը*</p>
+
+                    <p class="radio_btns">  
+                      <input type="radio" id="male" name="gender">
+                      <label for="male">Արական</label>
+                      <input type="radio" id="female" name="gender">
+                      <label for="female">Իգական</label>
+                    </p>
+                    
+                    <p style="margin-top: 1.8vw; margin-bottom: 0.5vw;">Ծննդյան ամսաթիվ</p>
+                    <div class="date">
+                      <input type="date" lang="en" style="margin-bottom: 1vw;">
+                      <p style="color: black;">
+                        <input onclick="block_fun(event, 1)" class="tariq_block_input" type="checkbox" id="check"> 
+                        <label for="check">Չգիտեմ</label>
+                      </p>
+                      <p class="tariq_p" style="margin-top: 1vw; margin-bottom: 0.5vw;">Տարիքը*</p>
+                      <input class="tariq_block" disabled>
+                    </div>
+
+                    <div class="form_data form_data_phone" style="margin-top: 2vw;">
+                      <div class="block add_phone">
+                        <p>Էլ-փոստի հասցե</p>
+                        <input>
+                      </div>
+                      <div class="block add_phone">
+                        <p>Հեռախոսահամար*</p>
+                        <input>
+                      </div>
+                      <div class="block"></div>
+                    </div>
+
+                    <div class="add_person" onclick="add_phone()">
+                      <div class="plus" style="font-weight: bold;">+</div>
+                      <p>Ավելացնել ևս մեկ հեռախոսահամար</p>
+                    </div>
+
+                    <div class="form_data" style="margin-top: 3vw;">
+                      <div class="block">
+                        <p>Ընտանիքի անդամների թիվը*</p>
+                        <input>
+                      </div>
+                      <div class="block">
+                        <p>Անչափահաս երեխաների թիվը</p>
+                        <input>
+                      </div>
+                    </div>
+
+                  </div>
+                  
+                  <div class="tab">
+                    <div class="container_for_secTab">
+                      <h2>2. Տեղագրություն</h2>
+
+                      <p class="first_tab_chbx" style="margin-top: 2.5vw; margin-bottom: 1.3vw;">Կա՞ արդյոք ընտանիքում հետևյալ խմբերից որևէ մեկը</p>
+
+                      <div class="checkboxes checkmb">
+                        <p>
+                          <input id="1" type="checkbox">
+                          <label for="1">պահեստազորային</label>
+                        </p>
+                        <p>
+                          <input id="2" type="checkbox">
+                          <label for="2">կամավոր</label>
+                        </p>
+                        <p>
+                          <input id="3" type="checkbox">
+                          <label for="3">զորակոչիկ/զինծառայողներ</label>
+                        </p>
+                        <p>
+                          <input id="4" type="checkbox">
+                          <label for="4">ռազմական գործողությունների հետևանքով վիրավորված անձ</label>
+                        </p>
+                        <p>
+                          <input id="5" type="checkbox">
+                          <label for="5">ռազմական գործողությունների հետևանքով զոհված անձ</label>
+                        </p>
+                        <p>
+                          <input id="6" type="checkbox">
+                          <label for="6">կենսաթոշակառու</label>
+                        </p>
+                        <p>
+                          <input id="7" type="checkbox">
+                          <label for="7">մինչև 5 տարեկան երեխա</label>
+                        </p>
+                        <p>
+                          <input id="8" type="checkbox">
+                          <label for="8">5-18 տարեկան երեխա</label>
+                        </p>
+                        <p>
+                          <input id="9" type="checkbox">
+                          <label for="9">հղի կին</label>
+                        </p>
+                        <p>
+                          <input id="10" type="checkbox">
+                          <label for="10">ֆիզիկական հաշմանդամություն ունեցող</label>
+                        </p>
+                        <p>
+                          <input id="11" type="checkbox">
+                          <label for="11">հոգեկան հաշմանդամություն ունեցող</label>
+                        </p>
+                        <p>
+                          <input id="12" type="checkbox">
+                          <label for="12">մտավոր հաշմանդամություն ունեցող</label>
+                        </p>
+                        <p>
+                          <input id="13" type="checkbox">
+                          <label for="13">զգայական հաշմանդամություն ունեցող</label>
+                        </p>
+                      </div>
+
+                      <div class="form_data">
+                        <p id="mobile_top">Որտե՞ղ եք Դուք/Ձեր ընտանիքի ներկայումս բնակվում*</p>
+                        <select>
+                          <option>Something 1</option>
+                          <option>Something 2</option>
+                          <option>Something 3</option>
+                          <option>Something 4</option>
+                        </select>
+
+                        <div class="block">
+                          <div class="section">
+                            <p>Տվյալ կացարանում բնակվելու բնակվելու թույլատրված ժամկետը*</p>
+                            <input>
+                          </div>
+
+                          <div class="section mt">
+                            <p>Ժամկետը* </p>
+                            <input type="date" lang="en" style="margin-bottom: 1vw;">
+                          </div>
+                        </div>
+
+                        <p style="margin-top: 2.5vw; margin-bottom: 1.3vw;">Առկա՞ են արդյոք կացարանում հետևյալ հարմարությունները</p>
+
+                        <div class="checkboxes">
+                          <p>
+                            <input id="21" type="checkbox">
+                            <label for="21">հոսող ջուր</label>
+                          </p>
+                          <p>
+                            <input id="22" type="checkbox">
+                            <label for="22">սանհանգույց</label>
+                          </p>
+                          <p>
+                            <input id="23" type="checkbox">
+                            <label for="23">լոգարան</label>
+                          </p>
+                          <p>
+                            <input id="24" type="checkbox">
+                            <label for="24">ջեռուցում</label>
+                          </p>
+                          <p>
+                            <input id="25" type="checkbox">
+                            <label for="25">էլեկտրամատակարարում</label>
+                          </p>
+                          <p>
+                            <input id="26" type="checkbox">
+                            <label for="26">գազամատակարարում</label>
+                          </p>
+                          <p>
+                            <input id="27" type="checkbox">
+                            <label for="27">սառնարան</label>
+                          </p>
+                          <p>
+                            <input id="28" type="checkbox">
+                            <label for="28">խոհանոց/սննդի պատրաստման հարմարություններ</label>
+                          </p>
+                        </div>
+
+                        <p class="tabTwo_selects" style="color: black; margin-top: 2.5vw; margin-bottom: 0vw;">Կացարանի հասցեն՝</p>
+
+                        <div class="block">
+                          <div class="section">
+                            <p>Մարզը*</p>
+                            <select>
+                              <option>Something 1</option>
+                              <option>Something 2</option>
+                              <option>Something 3</option>
+                              <option>Something 4</option>
+                            </select>
+                          </div>
+
+                          <div class="section">
+                            <p>Ժամկետը* </p>
+                            <select>
+                              <option>Something 1</option>
+                              <option>Something 2</option>
+                              <option>Something 3</option>
+                              <option>Something 4</option>
+                            </select>
+                          </div>
+                        </div>
+
+                        <p class="tabTwo_hascen">Հասցեն (ճշգրիտ հասցեն թույլ կտա ավելի հեշտ տրամադրել հնարավոր աջակցությունը)</p>
+                        <input type="text">
+                      
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="tab">
+                    <h2>3. Օգնություն</h2>
+                    <p style="margin-bottom: 1vw; margin-top: 2vw;">Կարիքի տեսակները</p>
+
+                    <div class="checkboxes">
+
+                      <div>
+                        <p>
+                          <input onclick="hide(event)" id="31" type="checkbox">
+                          <label for="31">Կացարան</label>
+                        </p>
+
+                        <div class="hidden_block">
+                          <p style="margin-top: 1vw; margin-bottom: 0.5vw;">Քանի հոգու համար</p>
+                          <input class="persCount_block">
+                        </div>
+                      </div>
+
+                      <div>
+                        <p>
+                          <input onclick="hide(event)" id="32" type="checkbox">
+                          <label for="32">Սնունդ</label>
+  
+                          <div class="hidden_block">
+                            <div class="checkboxes">
+                              <div>
+                                <p>
+                                  <input onclick="hide(event)" id="32point1" class="pointsOne" type="checkbox" >
+                                  <label for="32point1">չոր սննդամթերք, որը կարելի է եփելու</label>
+    
+                                  <div class="hidden_block">
+                                    <div class="form_data">
+                                      <div class="block">
+                                        <p>Քանի հոգու համար</p>
+                                        <input>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </p>
+                              </div>
+
+                              <div>
+                                <p>
+                                  <input onclick="hide(event)" id="32point2" class="pointsOne" type="checkbox">
+                                  <label for="32point2">պատրաստի սնունդ, որը կարիք չկա եփելու</label>
+    
+                                  <div class="hidden_block">
+                                    <div class="form_data">
+                                      <div class="block">
+                                        <p>Քանի հոգու համար</p>
+                                        <input>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </p>
+                              </div>
+
+                              <div>
+                                <p>
+                                  <input onclick="hide(event)" id="32point3" class="pointsOne" type="checkbox">
+                                  <label for="32point3">մանկան սնունդ (մինչև 2 տարեկան)</label>
+    
+                                  <div class="hidden_block">
+                                    <div class="form_data">
+                                      <div class="block">
+                                        <p>Քանի հոգու համար</p>
+                                        <input>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </p>
+                              </div>
+
+                            </div>
+                          </div>
+                        </p>
+                      </div>
+
+                      <div>
+                        <p>
+                          <input onclick="hide(event)" id="33" type="checkbox">
+                          <label for="33">Բժշկական ծառայություններ</label>
+  
+                          
+                          <div class="hidden_block">
+                            <div class="checkboxes">
+                              <p>
+                                <input id="33point1" type="checkbox" class="pointsTwo">
+                                <label for="33point1">հրատապ բուժօգնություն</label>
+                              </p>
+                              <p>
+                                <input id="33point2" type="checkbox" class="pointsTwo">
+                                <label for="33point2">բժշկական վերականգնում </label>
+                              </p>
+                              <p>
+                                <input id="33point3" type="checkbox" class="pointsTwo">
+                                <label for="33point3">ՔՈՎԻԴ-ի թեստ կամ բուժում</label>
+                              </p>
+                            </div>
+                          </div>
+                        </p>
+                      </div>
+
+                      <div>
+                        <p>
+                          <input onclick="hide(event)" id="35" type="checkbox">
+                          <label for="35">Աջակցող միջոցներ (պրոթեզաօրթոպեդիկ պարագաներ)</label>
+  
+                          <div class="hidden_block">
+                            <div class="checkboxes">
+                              <div>
+                                <p>
+                                  <input onclick="hide(event)" id="34point1" type="checkbox" class="pointsThree">
+                                  <label for="34point1">Պրոթեզ</label>
+    
+                                  <div class="hidden_block">
+                                    <div class="form_data">
+                                      <div class="block">
+                                        <div class="section">
+                                          <p>Քանի հոգու համար</p>
+                                          <input>
+                                        </div>
+                                      </div>
+    
+                                      <div class="block">
+                                        <div class="section">
+                                          <p>Տարիքային խումբ</p>
+                                          <select>
+                                            <option>Something 1</option>
+                                            <option>Something 2</option>
+                                            <option>Something 3</option>
+                                            <option>Something 4</option>
+                                          </select>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </p>
+                              </div>
+
+                              <div>
+                                <p>
+                                  <input onclick="hide(event)" id="34point2" type="checkbox" class="pointsThree">
+                                  <label for="34point2">Օրթեզ</label>
+    
+                                  <div class="hidden_block">
+                                    <div class="form_data">
+                                      <div class="block">
+                                        <div class="section">
+                                          <p>Քանի հոգու համար</p>
+                                          <input>
+                                        </div>
+                                      </div>
+    
+                                      <div class="block">
+                                        <div class="section">
+                                          <p>Տարիքային խումբ</p>
+                                          <select>
+                                            <option>Something 1</option>
+                                            <option>Something 2</option>
+                                            <option>Something 3</option>
+                                            <option>Something 4</option>
+                                          </select>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </p>
+                              </div>
+
+                              <div>
+                                <p>
+                                  <input onclick="hide(event)" id="34point3" type="checkbox" class="pointsThree">
+                                  <label for="34point3">Սեղմիրան</label>
+    
+                                  <div class="hidden_block">
+                                    <div class="form_data">
+                                      <div class="block">
+                                        <div class="section">
+                                          <p>Քանի հոգու համար</p>
+                                          <input>
+                                        </div>
+                                      </div>
+    
+                                      <div class="block">
+                                        <div class="section">
+                                          <p>Տարիքային խումբ</p>
+                                          <select>
+                                            <option>Something 1</option>
+                                            <option>Something 2</option>
+                                            <option>Something 3</option>
+                                            <option>Something 4</option>
+                                          </select>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </p>
+                              </div>
+
+                              <div>
+                                <p>
+                                  <input onclick="hide(event)" id="34point4" type="checkbox" class="pointsThree">
+                                  <label for="34point4">Կոշիկ</label>
+    
+                                  <div class="hidden_block">
+                                    <div class="form_data">
+                                      <div class="block">
+                                        <div class="section">
+                                          <p>Քանի հոգու համար</p>
+                                          <input>
+                                        </div>
+                                      </div>
+    
+                                      <div class="block">
+                                        <div class="section">
+                                          <p>Տարիքային խումբ</p>
+                                          <select>
+                                            <option>Something 1</option>
+                                            <option>Something 2</option>
+                                            <option>Something 3</option>
+                                            <option>Something 4</option>
+                                          </select>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </p>
+                              </div>
+
+                              <div>
+                                <p>
+                                  <input onclick="hide(event)" id="34point5" type="checkbox" class="pointsThree">
+                                  <label for="34point5">Աղեկապ</label>
+    
+                                  <div class="hidden_block">
+                                    <div class="form_data">
+                                      <div class="block">
+                                        <div class="section">
+                                          <p>Քանի հոգու համար</p>
+                                          <input>
+                                        </div>
+                                      </div>
+    
+                                      <div class="block">
+                                        <div class="section">
+                                          <p>Տարիքային խումբ</p>
+                                          <select>
+                                            <option>Something 1</option>
+                                            <option>Something 2</option>
+                                            <option>Something 3</option>
+                                            <option>Something 4</option>
+                                          </select>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </p>
+                              </div>
+
+                              <div>
+                                <p>
+                                  <input onclick="hide(event)" id="34point6" type="checkbox" class="pointsThree">
+                                  <label for="34point6">Ռեկլինատոր</label>
+    
+                                  <div class="hidden_block">
+                                    <div class="form_data">
+                                      <div class="block">
+                                        <div class="section">
+                                          <p>Քանի հոգու համար</p>
+                                          <input>
+                                        </div>
+                                      </div>
+    
+                                      <div class="block">
+                                        <div class="section">
+                                          <p>Տարիքային խումբ</p>
+                                          <select>
+                                            <option>Something 1</option>
+                                            <option>Something 2</option>
+                                            <option>Something 3</option>
+                                            <option>Something 4</option>
+                                          </select>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </p>
+                              </div>
+
+                              <div>
+                                <p>
+                                  <input onclick="hide(event)" id="34point7" type="checkbox" class="pointsThree">
+                                  <label for="34point7">Գուլպա</label>
+    
+                                  <div class="hidden_block">
+                                    <div class="form_data">
+                                      <div class="block">
+                                        <div class="section">
+                                          <p>Քանի հոգու համար</p>
+                                          <input>
+                                        </div>
+                                      </div>
+    
+                                      <div class="block">
+                                        <div class="section">
+                                          <p>Տարիքային խումբ</p>
+                                          <select>
+                                            <option>Something 1</option>
+                                            <option>Something 2</option>
+                                            <option>Something 3</option>
+                                            <option>Something 4</option>
+                                          </select>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </p>
+                              </div>
+
+                              <div>
+                                <p>
+                                  <input onclick="hide(event)" id="34point8" type="checkbox" class="pointsThree">
+                                  <label for="34point8">Ծնկակալ</label>
+    
+                                  <div class="hidden_block">
+                                    <div class="form_data">
+                                      <div class="block">
+                                        <div class="section">
+                                          <p>Քանի հոգու համար</p>
+                                          <input>
+                                        </div>
+                                      </div>
+    
+                                      <div class="block">
+                                        <div class="section">
+                                          <p>Տարիքային խումբ</p>
+                                          <select>
+                                            <option>Something 1</option>
+                                            <option>Something 2</option>
+                                            <option>Something 3</option>
+                                            <option>Something 4</option>
+                                          </select>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </p>
+                              </div>
+
+                              <div>
+                                <p>
+                                  <input onclick="hide(event)" id="34point9" type="checkbox" class="pointsThree">
+                                  <label for="34point9">Կրծքագեղձի պրոթեզ</label>
+    
+                                  <div class="hidden_block">
+                                    <div class="form_data">
+                                      <div class="block">
+                                        <div class="section">
+                                          <p>Քանի հոգու համար</p>
+                                          <input>
+                                        </div>
+                                      </div>
+    
+                                      <div class="block">
+                                        <div class="section">
+                                          <p>Տարիքային խումբ</p>
+                                          <select>
+                                            <option>Something 1</option>
+                                            <option>Something 2</option>
+                                            <option>Something 3</option>
+                                            <option>Something 4</option>
+                                          </select>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </p>
+                              </div>
+
+                              <div>
+                                <p>
+                                  <input onclick="hide(event)" id="34point91" type="checkbox" class="pointsThree">
+                                  <label for="34point91">Սուպինատոր</label>
+    
+                                  <div class="hidden_block">
+                                    <div class="form_data">
+                                      <div class="block">
+                                        <div class="section">
+                                          <p>Քանի հոգու համար</p>
+                                          <input>
+                                        </div>
+                                      </div>
+    
+                                      <div class="block">
+                                        <div class="section">
+                                          <p>Տարիքային խումբ</p>
+                                          <select>
+                                            <option>Something 1</option>
+                                            <option>Something 2</option>
+                                            <option>Something 3</option>
+                                            <option>Something 4</option>
+                                          </select>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </p>
+                              </div>
+
+                              <div>
+                                <p>
+                                  <input onclick="hide(event)" id="34point92" type="checkbox" class="pointsThree">
+                                  <label for="34point92">Ակնագնդի պրոթեզ</label>
+    
+                                  <div class="hidden_block">
+                                    <div class="form_data">
+                                      <div class="block">
+                                        <div class="section">
+                                          <p>Քանի հոգու համար</p>
+                                          <input>
+                                        </div>
+                                      </div>
+    
+                                      <div class="block">
+                                        <div class="section">
+                                          <p>Տարիքային խումբ</p>
+                                          <select>
+                                            <option>Something 1</option>
+                                            <option>Something 2</option>
+                                            <option>Something 3</option>
+                                            <option>Something 4</option>
+                                          </select>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </p>
+                              </div>
+
+                              <div>
+                                <p>
+                                  <input onclick="hide(event)" id="34point93" type="checkbox" class="pointsThree">
+                                  <label for="34point93">Անվասայլակ</label>
+    
+                                  <div class="hidden_block">
+                                    <div class="form_data">
+                                      <div class="block">
+                                        <div class="section">
+                                          <p>Քանի հոգու համար</p>
+                                          <input>
+                                        </div>
+                                      </div>
+    
+                                      <div class="block">
+                                        <div class="section">
+                                          <p>Տարիքային խումբ</p>
+                                          <select>
+                                            <option>Something 1</option>
+                                            <option>Something 2</option>
+                                            <option>Something 3</option>
+                                            <option>Something 4</option>
+                                          </select>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </p>
+                              </div>
+
+                              <div>
+                                <p>
+                                  <input onclick="hide(event)" id="34point94" type="checkbox" class="pointsThree">
+                                  <label for="34point94">Փոքր տրամաչափի սայլակ</label>
+    
+                                  <div class="hidden_block">
+                                    <div class="form_data">
+                                      <div class="block">
+                                        <div class="section">
+                                          <p>Քանի հոգու համար</p>
+                                          <input>
+                                        </div>
+                                      </div>
+    
+                                      <div class="block">
+                                        <div class="section">
+                                          <p>Տարիքային խումբ</p>
+                                          <select>
+                                            <option>Something 1</option>
+                                            <option>Something 2</option>
+                                            <option>Something 3</option>
+                                            <option>Something 4</option>
+                                          </select>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </p>
+                              </div>
+
+                              <div>
+                                <p>
+                                  <input onclick="hide(event)" id="34point95" type="checkbox" class="pointsThree">
+                                  <label for="34point95">Քայլակ</label>
+    
+                                  <div class="hidden_block">
+                                    <div class="form_data">
+                                      <div class="block">
+                                        <div class="section">
+                                          <p>Քանի հոգու համար</p>
+                                          <input>
+                                        </div>
+                                      </div>
+    
+                                      <div class="block">
+                                        <div class="section">
+                                          <p>Տարիքային խումբ</p>
+                                          <select>
+                                            <option>Something 1</option>
+                                            <option>Something 2</option>
+                                            <option>Something 3</option>
+                                            <option>Something 4</option>
+                                          </select>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </p>
+                              </div>
+
+                              <div>
+                                <p>
+                                  <input onclick="hide(event)" id="34point96" type="checkbox" class="pointsThree">
+                                  <label for="34point96">Հենակ</label>
+    
+                                  <div class="hidden_block">
+                                    <div class="form_data">
+                                      <div class="block">
+                                        <div class="section">
+                                          <p>Քանի հոգու համար</p>
+                                          <input>
+                                        </div>
+                                      </div>
+    
+                                      <div class="block">
+                                        <div class="section">
+                                          <p>Տարիքային խումբ</p>
+                                          <select>
+                                            <option>Something 1</option>
+                                            <option>Something 2</option>
+                                            <option>Something 3</option>
+                                            <option>Something 4</option>
+                                          </select>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </p>
+                              </div>
+
+                              <div>
+                                <p>
+                                  <input onclick="hide(event)" id="34point97" type="checkbox" class="pointsThree">
+                                  <label for="34point97">Ձեռնափայտ</label>
+    
+                                  <div class="hidden_block">
+                                    <div class="form_data">
+                                      <div class="block">
+                                        <div class="section">
+                                          <p>Քանի հոգու համար</p>
+                                          <input>
+                                        </div>
+                                      </div>
+    
+                                      <div class="block">
+                                        <div class="section">
+                                          <p>Տարիքային խումբ</p>
+                                          <select>
+                                            <option>Something 1</option>
+                                            <option>Something 2</option>
+                                            <option>Something 3</option>
+                                            <option>Something 4</option>
+                                          </select>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </p>
+                              </div>
+
+                              <div>
+                                <p>
+                                  <input onclick="hide(event)" id="34point98" type="checkbox" class="pointsThree">
+                                  <label for="34point98">Լսողական սարք</label>
+    
+                                  <div class="hidden_block">
+                                    <div class="form_data">
+                                      <div class="block">
+                                        <div class="section">
+                                          <p>Քանի հոգու համար</p>
+                                          <input>
+                                        </div>
+                                      </div>
+    
+                                      <div class="block">
+                                        <div class="section">
+                                          <p>Տարիքային խումբ</p>
+                                          <select>
+                                            <option>Something 1</option>
+                                            <option>Something 2</option>
+                                            <option>Something 3</option>
+                                            <option>Something 4</option>
+                                          </select>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </p>
+                              </div>
+
+                              <div>
+                                <p>
+                                  <input onclick="hide(event)" id="34point99" type="checkbox" class="pointsThree">
+                                  <label for="34point99">Ձայնաստեղծ սարք</label>
+    
+                                  <div class="hidden_block">
+                                    <div class="form_data">
+                                      <div class="block">
+                                        <div class="section">
+                                          <p>Քանի հոգու համար</p>
+                                          <input>
+                                        </div>
+                                      </div>
+    
+                                      <div class="block">
+                                        <div class="section">
+                                          <p>Տարիքային խումբ</p>
+                                          <select>
+                                            <option>Something 1</option>
+                                            <option>Something 2</option>
+                                            <option>Something 3</option>
+                                            <option>Something 4</option>
+                                          </select>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </p>
+                      </div>
+
+                      <div>
+                        <p>
+                          <input onclick="hide(event)" id="36" type="checkbox">
+                          <label for="36">Հագուստ</label>
+  
+                          <div class="hidden_block">
+  
+                            <div>
+                              <p>
+                                <input onclick="hide(event)" id="36point1" type="checkbox">
+                                <label for="36point1">վերարկու</label>
+  
+                                <div class="hidden_block">
+                                  <p class="radio_btns">  
+                                    <input type="radio" id="male1" name="gender1">
+                                    <label for="male1">Արական</label>
+                                    <input type="radio" id="female1" name="gender1">
+                                    <label for="female1">Իգական</label>
+                                  </p>
+  
+                                  <div class="form_data" style="margin-top: 2vw;">
+                                    <div class="block">
+                                      <p>Քանի հոգու համար</p>
+                                      <select>
+                                        <option>Something 1</option>
+                                        <option>Something 2</option>
+                                        <option>Something 3</option>
+                                        <option>Something 4</option>
+                                      </select>
+                                      
+                                    </div>
+                                    <div class="block">
+                                      <p>Տարիքային խումբ*</p>
+                                      <select>
+                                        <option>Something 1</option>
+                                        <option>Something 2</option>
+                                        <option>Something 3</option>
+                                        <option>Something 4</option>
+                                      </select>
+                                      
+                                    </div>
+                                    <div class="block">
+                                      <p>Տարիքային խումբ*</p>
+                                      <input>
+                                    </div>
+                                  </div>
+                                </div>
+                              </p>
+                            </div>
+
+                            <div>
+                              <p>
+                                <input onclick="hide(event)" id="36point2" type="checkbox">
+                                <label for="36point2">բաճկոն, ժակետ</label>
+  
+                                <div class="hidden_block">
+                                  <p class="radio_btns">  
+                                    <input type="radio" id="male2" name="gender2">
+                                    <label for="male2">Արական</label>
+                                    <input type="radio" id="female2" name="gender2">
+                                    <label for="female2">Իգական</label>
+                                  </p>
+  
+                                  <div class="form_data" style="margin-top: 2vw;">
+                                    <div class="block">
+                                      <p>Քանի հոգու համար</p>
+                                      <select>
+                                        <option>Something 1</option>
+                                        <option>Something 2</option>
+                                        <option>Something 3</option>
+                                        <option>Something 4</option>
+                                      </select>
+                                      
+                                    </div>
+                                    <div class="block">
+                                      <p>Տարիքային խումբ*</p>
+                                      <select>
+                                        <option>Something 1</option>
+                                        <option>Something 2</option>
+                                        <option>Something 3</option>
+                                        <option>Something 4</option>
+                                      </select>
+                                      
+                                    </div>
+                                    <div class="block">
+                                      <p>Տարիքային խումբ*</p>
+                                      <input>
+                                    </div>
+                                  </div>
+                                </div>
+  
+                              </p>
+                            </div>
+
+                            <div>
+                              <p>
+                                <input onclick="hide(event)" id="36point3" type="checkbox">
+                                <label for="36point3">վերնաշապիկ, սվիտեր, բլուզ</label>
+  
+                                <div class="hidden_block">
+                                  <p class="radio_btns">  
+                                    <input type="radio" id="male3" name="gender3">
+                                    <label for="male3">Արական</label>
+                                    <input type="radio" id="female3" name="gender3">
+                                    <label for="female3">Իգական</label>
+                                  </p>
+  
+                                  <div class="form_data" style="margin-top: 2vw;">
+                                    <div class="block">
+                                      <p>Քանի հոգու համար</p>
+                                      <select>
+                                        <option>Something 1</option>
+                                        <option>Something 2</option>
+                                        <option>Something 3</option>
+                                        <option>Something 4</option>
+                                      </select>
+                                      
+                                    </div>
+                                    <div class="block">
+                                      <p>Տարիքային խումբ*</p>
+                                      <select>
+                                        <option>Something 1</option>
+                                        <option>Something 2</option>
+                                        <option>Something 3</option>
+                                        <option>Something 4</option>
+                                      </select>
+                                      
+                                    </div>
+                                    <div class="block">
+                                      <p>Տարիքային խումբ*</p>
+                                      <input>
+                                    </div>
+                                  </div>
+                                </div>
+                              </p>
+                            </div>
+
+                            <div>
+                              <p>
+                                <input onclick="hide(event)" id="36point4" type="checkbox">
+                                <label for="36point4">կիսաշրջազգեստ (յուբկա)</label>
+  
+                                <div class="hidden_block">
+                                  <p class="radio_btns">  
+                                    <input type="radio" id="male4" name="gender4">
+                                    <label for="male4">Արական</label>
+                                    <input type="radio" id="female4" name="gender4">
+                                    <label for="female4">Իգական</label>
+                                  </p>
+  
+                                  <div class="form_data" style="margin-top: 2vw;">
+                                    <div class="block">
+                                      <p>Քանի հոգու համար</p>
+                                      <select>
+                                        <option>Something 1</option>
+                                        <option>Something 2</option>
+                                        <option>Something 3</option>
+                                        <option>Something 4</option>
+                                      </select>
+                                      
+                                    </div>
+                                    <div class="block">
+                                      <p>Տարիքային խումբ*</p>
+                                      <select>
+                                        <option>Something 1</option>
+                                        <option>Something 2</option>
+                                        <option>Something 3</option>
+                                        <option>Something 4</option>
+                                      </select>
+                                      
+                                    </div>
+                                    <div class="block">
+                                      <p>Տարիքային խումբ*</p>
+                                      <input>
+                                    </div>
+                                  </div>
+                                </div>
+                              </p>
+                            </div>
+
+                            <div>
+                              <p>
+                                <input onclick="hide(event)" id="36point5" type="checkbox">
+                                <label for="36point5">շալվար</label>
+  
+                                <div class="hidden_block">
+                                  <p class="radio_btns">  
+                                    <input type="radio" id="male5" name="gender5">
+                                    <label for="male5">Արական</label>
+                                    <input type="radio" id="female5" name="gender5">
+                                    <label for="female5">Իգական</label>
+                                  </p>
+  
+                                  <div class="form_data" style="margin-top: 2vw;">
+                                    <div class="block">
+                                      <p>Քանի հոգու համար</p>
+                                      <select>
+                                        <option>Something 1</option>
+                                        <option>Something 2</option>
+                                        <option>Something 3</option>
+                                        <option>Something 4</option>
+                                      </select>
+                                      
+                                    </div>
+                                    <div class="block">
+                                      <p>Տարիքային խումբ*</p>
+                                      <select>
+                                        <option>Something 1</option>
+                                        <option>Something 2</option>
+                                        <option>Something 3</option>
+                                        <option>Something 4</option>
+                                      </select>
+                                      
+                                    </div>
+                                    <div class="block">
+                                      <p>Տարիքային խումբ*</p>
+                                      <input>
+                                    </div>
+                                  </div>
+                                </div>
+                              </p>
+                            </div>
+
+                            <div>
+                              <p>
+                                <input onclick="hide(event)" id="36point6" type="checkbox">
+                                <label for="36point6">ներքնաշորեր</label>
+  
+                                <div class="hidden_block">
+                                  <p class="radio_btns">  
+                                    <input type="radio" id="male6" name="gender6">
+                                    <label for="male6">Արական</label>
+                                    <input type="radio" id="female6" name="gender6">
+                                    <label for="female6">Իգական</label>
+                                  </p>
+  
+                                  <div class="form_data" style="margin-top: 2vw;">
+                                    <div class="block">
+                                      <p>Քանի հոգու համար</p>
+                                      <select>
+                                        <option>Something 1</option>
+                                        <option>Something 2</option>
+                                        <option>Something 3</option>
+                                        <option>Something 4</option>
+                                      </select>
+                                      
+                                    </div>
+                                    <div class="block">
+                                      <p>Տարիքային խումբ*</p>
+                                      <select>
+                                        <option>Something 1</option>
+                                        <option>Something 2</option>
+                                        <option>Something 3</option>
+                                        <option>Something 4</option>
+                                      </select>
+                                      
+                                    </div>
+                                    <div class="block">
+                                      <p>Տարիքային խումբ*</p>
+                                      <input>
+                                    </div>
+                                  </div>
+                                </div>
+                              </p>
+                            </div>
+
+                            <div>
+                              <p>
+                                <input onclick="hide(event)" id="36point7" type="checkbox">
+                                <label for="36point7">Գուլպա</label>
+  
+                                <div class="hidden_block">
+                                  <p class="radio_btns">  
+                                    <input type="radio" id="male7" name="gender7">
+                                    <label for="male7">Արական</label>
+                                    <input type="radio" id="female7" name="gender7">
+                                    <label for="female7">Իգական</label>
+                                  </p>
+  
+                                  <div class="form_data" style="margin-top: 2vw;">
+                                    <div class="block">
+                                      <p>Քանի հոգու համար</p>
+                                      <select>
+                                        <option>Something 1</option>
+                                        <option>Something 2</option>
+                                        <option>Something 3</option>
+                                        <option>Something 4</option>
+                                      </select>
+                                      
+                                    </div>
+                                    <div class="block">
+                                      <p>Տարիքային խումբ*</p>
+                                      <select>
+                                        <option>Something 1</option>
+                                        <option>Something 2</option>
+                                        <option>Something 3</option>
+                                        <option>Something 4</option>
+                                      </select>
+                                      
+                                    </div>
+                                    <div class="block">
+                                      <p>Տարիքային խումբ*</p>
+                                      <input>
+                                    </div>
+                                  </div>
+                                </div>
+                              </p>
+                            </div>
+
+                            <div>
+                              <p>
+                                <input onclick="hide(event)" id="36point8" type="checkbox">
+                                <label for="36point8">նորածնի հագուստ</label>
+  
+                                <div class="hidden_block">
+                                  <p class="radio_btns">  
+                                    <input type="radio" id="male8" name="gender8">
+                                    <label for="male8">Արական</label>
+                                    <input type="radio" id="female8" name="gender8">
+                                    <label for="female8">Իգական</label>
+                                  </p>
+  
+                                  <div class="form_data" style="margin-top: 2vw;">
+                                    <div class="block">
+                                      <p>Քանի հոգու համար</p>
+                                      <select>
+                                        <option>Something 1</option>
+                                        <option>Something 2</option>
+                                        <option>Something 3</option>
+                                        <option>Something 4</option>
+                                      </select>
+                                      
+                                    </div>
+                                    <div class="block">
+                                      <p>Տարիքային խումբ*</p>
+                                      <select>
+                                        <option>Something 1</option>
+                                        <option>Something 2</option>
+                                        <option>Something 3</option>
+                                        <option>Something 4</option>
+                                      </select>
+                                      
+                                    </div>
+                                    <div class="block">
+                                      <p>Տարիքային խումբ*</p>
+                                      <input>
+                                    </div>
+                                  </div>
+                                </div>
+                              </p>
+                            </div>
+
+                          </div>
+                        </p>
+                      </div>
+
+                      <div>
+                        <p>
+                          <input onclick="hide(event)" id="37" type="checkbox">
+                          <label for="37">Կոշիկ</label>
+  
+                          <div class="hidden_block">
+                            <div>
+                              <p>
+                                <input onclick="hide(event)" id="37point1" type="checkbox">
+                                <label for="37point1">Հողաթափ, տնային կոշիկ</label>
+    
+                                <div class="hidden_block">
+                                  <div class="form_data">
+                                    <div class="block">
+                                      <div class="section">
+                                        <p>Չափսը</p>
+                                        <input>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </p>
+                            </div>
+
+                            <div>
+                              <p>
+                                <input onclick="hide(event)" id="37point2" type="checkbox">
+                                <label for="37point2">բաց կոշիկ</label>
+    
+                                <div class="hidden_block">
+                                  <div class="form_data">
+                                    <div class="block">
+                                      <div class="section">
+                                        <p>Չափսը</p>
+                                        <input>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </p>
+                            </div>
+
+                            <div>
+                              <p>
+                                <input onclick="hide(event)" id="37point3" type="checkbox">
+                                <label for="37point3">փակ կոշիկ</label>
+    
+                                <div class="hidden_block">
+                                  <div class="form_data">
+                                    <div class="block">
+                                      <div class="section">
+                                        <p>Չափսը</p>
+                                        <input>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </p>
+                            </div>
+
+                            <div>
+                              <p>
+                                <input onclick="hide(event)" id="37point4" type="checkbox">
+                                <label for="37point4">տաք կոշիկ (սապոգ)</label>
+    
+                                <div class="hidden_block">
+                                  <div class="form_data">
+                                    <div class="block">
+                                      <div class="section">
+                                        <p>Չափսը</p>
+                                        <input>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </p>
+                            </div>
+                          </div>
+  
+                        </p>
+                      </div>
+
+                      <div>
+                        <p>
+                          <input onclick="hide(event)" id="38" type="checkbox">
+                          <label for="38">Հիգիենայի պարագաներ</label>
+  
+  
+                          <div class="hidden_block">
+
+                            <div>
+                              <p>
+                                <input onclick="hide(event)" id="38point1" type="checkbox">
+                                <label for="38point1">օճառ</label>
+                                
+                                <div class="hidden_block">
+                                  <div class="form_data">
+                                    <div class="block">
+                                      <div class="section">
+                                        <p>Քանի հոգու համար</p>
+                                        <input>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </p>
+                            </div>
+
+                            <div>
+                              <p>
+                                <input onclick="hide(event)" id="38point2" type="checkbox">
+                                <label for="38point2">ատամի մածուկ</label>
+  
+                                <div class="hidden_block">
+                                  <div class="form_data">
+                                    <div class="block">
+                                      <div class="section">
+                                        <p>Քանի հոգու համար</p>
+                                        <input>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </p>
+                            </div>
+
+                            <div>
+                              <p>
+                                <input onclick="hide(event)" id="38point3" type="checkbox">
+                                <label for="38point3">ատամի խոզանակ</label>
+  
+                                <div class="hidden_block">
+                                  <div class="form_data">
+                                    <div class="block">
+                                      <div class="section">
+                                        <p>Քանի հոգու համար</p>
+                                        <input>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </p>
+                            </div>
+
+                            <div>
+                              <p>
+                                <input onclick="hide(event)" id="38point4" type="checkbox">
+                                <label for="38point4">զուգարանի թուղթ</label>
+  
+                                <div class="hidden_block">
+                                  <div class="form_data">
+                                    <div class="block">
+                                      <div class="section">
+                                        <p>Քանի հոգու համար</p>
+                                        <input>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </p>
+                            </div>
+
+                            <div>
+                              <p>
+                                <input onclick="hide(event)" id="38point5" type="checkbox">
+                                <label for="38point5">լվացող միջոցներ (սպասքի, հագուստի համար)</label>
+  
+                                <div class="hidden_block">
+                                  <div class="form_data">
+                                    <div class="block">
+                                      <div class="section">
+                                        <p>Քանի հոգու համար</p>
+                                        <input>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </p>
+                            </div>
+
+                            <div>
+                              <p>
+                                <input onclick="hide(event)" id="38point6" type="checkbox">
+                                <label for="38point6">ախտահանիչ (ժավել)</label>
+  
+                                <div class="hidden_block">
+                                  <div class="form_data">
+                                    <div class="block">
+                                      <div class="section">
+                                        <p>Քանի հոգու համար</p>
+                                        <input>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </p>
+                            </div>
+
+                            <div>
+                              <p>
+                                <input onclick="hide(event)" id="38point7" type="checkbox">
+                                <label for="38point7">դիմակ</label>
+  
+                                <div class="hidden_block">
+                                  <div class="form_data">
+                                    <div class="block">
+                                      <div class="section">
+                                        <p>Քանի հոգու համար</p>
+                                        <input>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </p>
+                            </div>
+
+                            <div>
+                              <p>
+                                <input onclick="hide(event)" id="38point8" type="checkbox">
+                                <label for="38point8">ալկոգել</label>
+  
+                                <div class="hidden_block">
+                                  <div class="form_data">
+                                    <div class="block">
+                                      <div class="section">
+                                        <p>Քանի հոգու համար</p>
+                                        <input>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </p>
+                            </div>
+
+                            <div>
+                              <p>
+                                <input onclick="hide(event)" id="38point9" type="checkbox">
+                                <label for="38point9">կնոջ միջադիր</label>
+  
+                                <div class="hidden_block">
+                                  <div class="form_data">
+                                    <div class="block">
+                                      <div class="section">
+                                        <p>Քանի հոգու համար</p>
+                                        <input>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </p>
+                            </div>
+
+                            <div>
+                              <p>
+                                <input onclick="hide(event)" id="38point01" type="checkbox">
+                                <label for="38point01">մեծահասակի տակդիր</label>
+  
+                                <div class="hidden_block">
+                                  <div class="form_data">
+                                    <div class="block">
+                                      <div class="section">
+                                        <p>Քանի հոգու համար</p>
+                                        <input>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </p>
+                            </div>
+
+                            <div>
+                              <p>
+                                <input onclick="hide(event)" id="38point02" type="checkbox">
+                                <label for="38point02">մանկան տակդիր</label>
+  
+                                <div class="hidden_block">
+                                  <div class="form_data">
+                                    <div class="block">
+                                      <div class="section">
+                                        <p>Քանի հոգու համար</p>
+                                        <input>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </p>
+                            </div>
+
+
+                          </div>
+                        </p>
+                      </div>
+
+                      <div>
+                        <p>
+                          <input onclick="hide(event)" id="39" type="checkbox">
+                          <label for="39">Տան պարագաներ և կահավորում</label>
+                        </p>
+
+                        <div class="hidden_block">
+                          <div class="checkboxes">
+
+                            <div>
+                              <p>
+                                <input onclick="hide(event)" id="39point1" class="pointsOne" type="checkbox" >
+                                <label for="39point1">Աթոռ</label>
+  
+                                <div class="hidden_block">
+                                  <div class="form_data">
+                                    <div class="block">
+                                      <p>Քանի հոգու համար</p>
+                                      <input>
+                                    </div>
+                                  </div>
+                                </div>
+                              </p>
+                            </div>
+
+                            <div>
+                              <p>
+                                <input onclick="hide(event)" id="39point2" class="pointsOne" type="checkbox">
+                                <label for="39point2">սեղան </label>
+  
+                                <div class="hidden_block">
+                                  <div class="form_data">
+                                    <div class="block">
+                                      <p>Քանի հոգու համար</p>
+                                      <input>
+                                    </div>
+                                  </div>
+                                </div>
+                              </p>
+                            </div>
+
+                            <div>
+                              <p>
+                                <input onclick="hide(event)" id="39point3" class="pointsOne" type="checkbox">
+                                <label for="39point3">մահճակալ</label>
+  
+                                <div class="hidden_block">
+                                  <div class="form_data">
+                                    <div class="block">
+                                      <p>Քանի հոգու համար</p>
+                                      <input>
+                                    </div>
+                                  </div>
+                                </div>
+                              </p>
+                            </div>
+
+                            <div>
+                              <p>
+                                <input onclick="hide(event)" id="39point4" class="pointsOne" type="checkbox">
+                                <label for="39point4">մատրաս/դոշակ</label>
+  
+                                <div class="hidden_block">
+                                  <div class="form_data">
+                                    <div class="block">
+                                      <p>Քանի հոգու համար</p>
+                                      <input>
+                                    </div>
+                                  </div>
+                                </div>
+                              </p>
+                            </div>
+
+                            <div>
+                              <p>
+                                <input onclick="hide(event)" id="39point5" class="pointsOne" type="checkbox">
+                                <label for="39point5">բարձ</label>
+  
+                                <div class="hidden_block">
+                                  <div class="form_data">
+                                    <div class="block">
+                                      <p>Քանի հոգու համար</p>
+                                      <input>
+                                    </div>
+                                  </div>
+                                </div>
+                              </p>
+                            </div>
+
+                            <div>
+                              <p>
+                                <input onclick="hide(event)" id="39point6" class="pointsOne" type="checkbox">
+                                <label for="39point6">վերմակ/ծածկոց</label>
+  
+                                <div class="hidden_block">
+                                  <div class="form_data">
+                                    <div class="block">
+                                      <p>Քանի հոգու համար</p>
+                                      <input>
+                                    </div>
+                                  </div>
+                                </div>
+                              </p>
+                            </div>
+
+                            <div>
+                              <p>
+                                <input onclick="hide(event)" id="39point7" class="pointsOne" type="checkbox">
+                                <label for="39point7">անկողնային սպիտակեղենի հավաքածու</label>
+  
+                                <div class="hidden_block">
+                                  <div class="form_data">
+                                    <div class="block">
+                                      <p>Քանի հոգու համար</p>
+                                      <input>
+                                    </div>
+                                  </div>
+                                </div>
+                              </p>
+                            </div>
+
+                            <div>
+                              <p>
+                                <input onclick="hide(event)" id="39point8" class="pointsOne" type="checkbox">
+                                <label for="39point8">սրբիչներ</label>
+  
+                                <div class="hidden_block">
+                                  <div class="form_data">
+                                    <div class="block">
+                                      <p>Քանի հոգու համար</p>
+                                      <input>
+                                    </div>
+                                  </div>
+                                </div>
+                              </p>
+                            </div>
+
+                            <div>
+                              <p>
+                                <input onclick="hide(event)" id="39point9" class="pointsOne" type="checkbox">
+                                <label for="39point9">խոհանոցում եփելու սպասքի հավաքածու (կաթսաներ)</label>
+  
+                                <div class="hidden_block">
+                                  <div class="form_data">
+                                    <div class="block">
+                                      <p>Քանի հոգու համար</p>
+                                      <input>
+                                    </div>
+                                  </div>
+                                </div>
+                              </p>
+                            </div>
+
+                            <div>
+                              <p>
+                                <input onclick="hide(event)" id="39point01" class="pointsOne" type="checkbox">
+                                <label for="39point01">ուտելու սպասքի հավաքածու ուտելու (ափսե, բաժակ, դանակ, պատառաքաղ, գդալներ)</label>
+  
+                                <div class="hidden_block">
+                                  <div class="form_data">
+                                    <div class="block">
+                                      <p>Քանի հոգու համար</p>
+                                      <input>
+                                    </div>
+                                  </div>
+                                </div>
+                              </p>
+                            </div>
+
+                            <div>
+                              <p>
+                                <input onclick="hide(event)" id="39point02" class="pointsOne" type="checkbox">
+                                <label for="39point02">արդուկ</label>
+  
+                                <div class="hidden_block">
+                                  <div class="form_data">
+                                    <div class="block">
+                                      <p>Քանի հոգու համար</p>
+                                      <input>
+                                    </div>
+                                  </div>
+                                </div>
+                              </p>
+                            </div>
+
+                            <div>
+                              <p>
+                                <input onclick="hide(event)" id="39point03" class="pointsOne" type="checkbox">
+                                <label for="39point03">թեյնիկ</label>
+  
+                                <div class="hidden_block">
+                                  <div class="form_data">
+                                    <div class="block">
+                                      <p>Քանի հոգու համար</p>
+                                      <input>
+                                    </div>
+                                  </div>
+                                </div>
+                              </p>
+                            </div>
+
+                          </div>
+                        </div>
+
+                      </div>
+
+                      <div>
+                        <p>
+                          <input onclick="hide(event)" id="301" type="checkbox">
+                          <label for="301">Դպրոցական պարագաներ</label>
+                        </p>
+
+                        <div class="hidden_block">
+                          <div class="checkboxes">
+
+                            <div>
+                              <p>
+                                <input onclick="hide(event)" id="301point1" class="pointsOne" type="checkbox" >
+                                <label for="301point1">գրենական պիտույքներ</label>
+  
+                                <div class="hidden_block">
+                                  <div class="form_data">
+                                    <div class="block">
+                                      <p>Քանի երեխայի համար</p>
+                                      <input>
+                                    </div>
+                                  </div>
+                                </div>
+                              </p>
+                            </div>
+
+                            <div>
+                              <p>
+                                <input onclick="hide(event)" id="301point2" class="pointsOne" type="checkbox" >
+                                <label for="301point2">պայուսյակ</label>
+  
+                                <div class="hidden_block">
+                                  <div class="form_data">
+                                    <div class="block">
+                                      <p>Քանի երեխայի համար</p>
+                                      <input>
+                                    </div>
+                                  </div>
+                                </div>
+                              </p>
+                            </div>
+
+                            <div>
+                              <p>
+                                <input onclick="hide(event)" id="301point3" class="pointsOne" type="checkbox" >
+                                <label for="301point3">գրենական պիտույքներ</label>
+  
+                                <div class="hidden_block">
+                                  <div class="form_data">
+                                    <div class="block">
+                                      <p>Քանի երեխայի համար</p>
+                                      <input>
+                                    </div>
+                                  </div>
+                                </div>
+                              </p>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+
+                      <div>
+                        <p>
+                          <input onclick="hide(event)" id="302" type="checkbox">
+                          <label for="302">Սոցիալ-հոգեբանական վերականգնում</label>
+                        </p>
+
+                        <div class="hidden_block">
+                          <div class="checkboxes">
+
+                            <div>
+                              <p>
+                                <input id="302point1" class="pointsOne" type="checkbox" >
+                                <label for="302point1">Ցերեկային խնամքի ծառայություններ (կյանքի դժվարին իրավիճակում հայտնված երեխաների համար)</label>
+                              </p>
+                            </div>
+
+                            <div>
+                              <p>
+                                <input id="302point2" class="pointsOne" type="checkbox" >
+                                <label for="302point2">Սոցիալական հոգածության ցերեկային կենտրոն (65 տարին լրացած և 18 տարին լրացած հաշմանդամություն ունեցող անձանց համար)</label>
+                              </p>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+
+                      <div>
+                        <p>
+                          <input onclick="hide(event)" id="303" type="checkbox">
+                          <label for="303">Խնամք</label>
+                        </p>
+
+                        <div class="hidden_block">
+                          <div class="checkboxes">
+
+                            <div>
+                              <p>
+                                <input id="303point1" class="pointsOne" type="checkbox" >
+                                <label for="303point1">տնային խնամք (65 տարին լրացած և 18 տարին լրացած հաշմանդամություն ունեցող անձանց համար)</label>
+                              </p>
+                            </div>
+
+                            <div>
+                              <p>
+                                <input id="303point2" class="pointsOne" type="checkbox" >
+                                <label for="303point2">շուրջօրյա խնամք հաստատություններում (մինչև 18 տարեկան առանց ծնողական խնամքի մնացած երեխաների և 65 տարին լրացած և 18 տարին լրացած հաշմանդամություն ունեցող անձանց համար)</label>
+                              </p>
+                            </div>
+
+                          </div>
+                        </div>
+
+                      </div>
+
+                      <div>
+                        <p>
+                          <input onclick="hide(event)" id="304" type="checkbox">
+                          <label for="304">Փաստաթղթերի վերականգնում/ձևակերպում</label>
+                        </p>
+
+                        <div class="hidden_block">
+                          <p class="radio_btns">  
+                            <input type="radio" id="yes" name="documents">
+                            <label for="yes">Այո </label>
+                            <input type="radio" id="no" name="documents">
+                            <label for="no">Ոչ </label>
+                          </p>
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+                  
+                  <div class="tab blockBtns">
+                    <div style="width: 50vw; height: 100vw;"></div>
+                  </div>
+                  
+                  <div style="overflow:auto; margin-top: 2.2vw;" class="step_form_btns">
+                    <div style="float:left;">
+                      <button type="button" id="prevBtn" onclick="nextPrev(-1)">Նախորդը</button>
+                      <button type="button" id="nextBtn" onclick="nextPrev(1)">հաջորդը</button>
+                    </div>
+                  </div>
+                  
+                  <div>
+                    <span class="step"></span>
+                    <span class="step"></span>
+                    <span class="step"></span>
+                    <span class="step"></span>
+                  </div>
+                </form>
+
+            </div>
+        </div>
+
+        <footer >
+          <div class="container">
+              <p>© Սոցիալական արագ արձագանքման հարթակ 2020</p>
+          </div>
+      </footer>
+
+    </div>
+
+
+    <script src="../scripts/script.js"></script>
+    <script>
+      showTab(currentTab)
+
+      function add_phone() {
+          let add_phone = document.querySelectorAll('.add_phone')
+          let clone = add_phone[add_phone.length-1].cloneNode(true)
+          add_phone[add_phone.length-1].after(clone)
+      }
+    </script>
+</body>
+</html>
